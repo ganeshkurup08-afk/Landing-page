@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ganesh| Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root{
+  --bg:#1f2328;
+  --violet:#8b5cf6;
+  --violet-soft:rgba(139,92,246,.35);
+  --text:#ffffff;
+  --muted:#cfcfcf;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 70px;
+}
+
+.navbar h2{
+  font-size:1.4rem;
+}
+
+.navbar a{
+  color:#ccc;
+  text-decoration:none;
+  margin-left:28px;
+  font-size:.95rem;
+}
+
+.navbar a.active{
+  color:var(--violet);
+}
+
+/* HERO */
+.hero{
+  min-height:calc(100vh - 80px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:40px 70px;
+}
+
+.left{
+  max-width:650px;
+}
+
+.hello{
+  color:#aaa;
+  font-size:.95rem;
+}
+
+.name{
+  font-size:3.8rem;
+  margin:10px 0 5px;
+}
+
+.role{
+  font-size:3rem;
+  color:var(--violet);
+  margin-bottom:20px;
+}
+
+.desc{
+  font-size:1rem;
+  line-height:1.7;
+  color:var(--muted);
+}
+
+/* BUTTON + ICONS */
+.actions{
+  margin-top:35px;
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.btn{
+  background:var(--violet);
+  color:#fff;
+  padding:14px 34px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.social a{
+  color:#aaa;
+  font-size:18px;
+  margin-right:14px;
+}
+
+.social a:hover{
+  color:var(--violet);
+}
+
+/* IMAGE */
+.right{
+  margin-right:40px;
+}
+
+.ring{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  border:6px solid var(--violet);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.ring::after{
+  content:"";
+  position:absolute;
+  inset:-18px;
+  border-radius:50%;
+  border:2px solid var(--violet-soft);
+}
+
+.ring img{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+/* SECTIONS */
+.section{
+  padding:60px 70px;
+}
+
+.section h3{
+  color:var(--violet);
+  font-size:1.7rem;
+  margin-bottom:15px;
+}
+
+.section p{
+  max-width:900px;
+  line-height:1.7;
+  color:var(--muted);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  font-size:.85rem;
+  color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .right{
+    margin-top:40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <h2>Portfolio</h2>
+  <nav>
+    <a class="active" href="#">Home</a>
+    <a href="I am a Web Developer who specializes in building responsive,
+      user-friendly websites using HTML, CSS and JavaScript.
+      I focus on clean UI design, high performance and accessibility
+      to deliver smooth and engaging web experiences.">About</a>
+    <a href="">Portfolio</a>
+    <a href="8754044506">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="left">
+    <span class="hello">Hello — I'm</span>
+    <h1 class="name">Ganesh</h1>
+    <h2 class="role">Web Developer</h2>
+
+    <p class="desc">
+      I am a Web Developer who specializes in building responsive,
+      user-friendly websites using HTML, CSS and JavaScript.
+      I focus on clean UI design, high performance and accessibility
+      to deliver smooth and engaging web experiences.
+    </p>
+
+    <div class="actions">
+      <a href="C:\Users\prem.i\portfolio website\CV_2026010316293142.pdf" class="btn">Download CV</a>
+
+      <div class="social">
+        <a href="https://github.com/ganeshkurup08-afk"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ganesh-ganesh-b1aa99309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="ring">
+      <!-- change image name if needed -->
+      <img src="C:\Users\prem.i\portfolio website\IMG-20260103-WA0018.jpg" alt="Profile">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>About</h3>
+  <p>
+    Hi, I'm Ganesh, a B.E. CSE student at Kathir College of Engineering.
+    I'm passionate about Web Development and enjoy building clean,
+    responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+    I also have strong knowledge in Java.
+  </p>
+</section>
+
+<footer>
+  © 2025 ganesh · Built with HTML, CSS & JavaScript
+</footer>
+
+</body>
+</html>
